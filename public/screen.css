@@ -9,4 +9,208 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #333333;
+}
+h1 {
+  display: flex;
+  width: 100 %;
+  color: whitesmoke;
+}
+
+.menu-item-3 {
+  text-align: right;
+  justify-content: center;
+  color: blue;
+  display: none;
+}
+
+blockquote {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Arial;
+  font-weight: 800;
+}
+
+nav {
+  text-align: center;
+  font-family: 'Arial';
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding-bottom: 1rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+}
+
+nav ul li {
+  color: whitesmoke;
+}
+
+nav .menu-item {
+  text-align: center;
+  justify-content: center;
+  color: rgb(184, 179, 179);
+  padding: 1rem;
+  text-decoration-line: none;
+  display: inline-block;
+}
+
+a:hover {
+  color: salmon;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  margin: 0;
+}
+
+li > img {
+  height: auto;
+  width: 26rem;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+footer ul li {
+  color: whitesmoke;
+  padding: 0rem;
+  border: black;
+}
+
+footer .menu-item-2 {
+  text-align: center;
+  color: whitesmoke;
+  padding: 1rem;
+  margin: 0.25rem;
+  text-decoration-line: none;
+  background-color: black;
+}
+
+footer .a {
+  background-color: black;
+}
+
+@media (min-width: 768px) {
+  /* should be targeting a tablet display*/
+
+  section > li {
+    flex-direction: row;
+    flex-basis: 0%;
+    text-align: center;
+    justify-content: center;
+  }
+  .menu-item-3 {
+    text-align: right;
+    justify-content: center;
+    color: blue;
+    /* display: none; */
+  }
+
+  nav {
+    font-size: 1rem;
+  }
+  nav ul {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  a:hover {
+    color: salmon;
+  }
+
+  li > img {
+    height: 25rem;
+    width: auto;
+    padding: 1rem;
+  }
+
+  li {
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* should be targeting a desktop display*/
+
+  section > li {
+    flex-direction: row;
+    flex-basis: 0%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  nav {
+    font-size: 1rem;
+  }
+  nav .menu-item {
+    text-align: center;
+    justify-content: center;
+    color: rgb(184, 179, 179);
+    padding: 1rem;
+    text-decoration-line: none;
+    display: inline-block;
+  }
+  .menu-item-3 {
+    text-align: right;
+    justify-content: center;
+    color: blue;
+    /* display: none; */
+  }
+  a:hover {
+    color: salmon;
+  }
+
+  li > img {
+    height: 50rem;
+    width: auto;
+  }
+
+  li {
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
 }
